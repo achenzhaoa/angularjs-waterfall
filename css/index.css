@@ -1,0 +1,13 @@
+.record{
+	display:inline-block;
+	float:left;
+	margin-left:8px;
+	width:226px;
+	border:1px solid black;
+	margin-top:3px;
+}
+
+.column{
+	width:234px;
+	float:left;
+}

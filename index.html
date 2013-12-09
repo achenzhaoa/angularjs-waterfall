@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" ng-app="Waterfall">
+<head>
+	<meta charset="UTF-8">
+	<title>Waterfall</title>
+	<title>Angularjs-waterfall</title>
+    
+     <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.css">
+
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+
+	<script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="lib/angular-1.2.3/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-1.2.3/angular-resource.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div class="container" ng-controller="AppCtrl">
+		<div class="row text-center">
+			Waterfall Demo
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<div ng-repeat="item0 in items[0]" class="record" style="height:{{item0.height}}px;"></div>
+			</div>
+
+			<div class="column">
+				<div ng-repeat="item1 in items[1]" class="record" style="height:{{item1.height}}px;"></div>
+			</div>
+
+			<div class="column">
+				<div ng-repeat="item2 in items[2]" class="record" style="height:{{item2.height}}px;"></div>
+			</div>
+
+			<div class="column">
+				<div ng-repeat="item3 in items[3]" class="record" style="height:{{item3.height}}px;"></div>
+			</div>
+
+			<div class="column">
+				<div ng-repeat="item4 in items[4]" class="record" style="height:{{item4.height}}px;"></div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<button class="btn">More ...</button>
+		</div>
+	</div>
+</body>
+</html>
